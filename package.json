@@ -1,0 +1,23 @@
+{
+  "name": "library-website",
+  "version": "1.0.0",
+  "description": "\"# Library-management-website\" \r \"# Library-management-website\"",
+  "main": "lib.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nike007007/Library-management-website.git"
+  },
+  "author": "Nikhil.G",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nike007007/Library-management-website/issues"
+  },
+  "homepage": "https://github.com/nike007007/Library-management-website#readme",
+  "dependencies": {
+    "ejs": "^3.1.3",
+    "express": "^4.17.1"
+  }
+}

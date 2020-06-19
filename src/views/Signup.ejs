@@ -1,0 +1,33 @@
+<html>
+    <head>
+        <title>Sign up Form</title>
+        <link rel="Stylesheet" href="/css/style1.css"> 
+        <style>body {
+            background-color:rgb(45, 214, 200) ;
+            background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-size: 100% 100%;
+          }
+          </style>
+    </head>
+    
+      <body>
+        <div class="sign-up-form">
+            <img src="icon.png">
+            <h1>Sign Up Now</h1>
+            <form action="signin.ejs" onsubmit="return validate()">
+                <input type="email" class="input-box" placeholder="Your Email" id="email">
+                <label for="error" id="error"></label>
+                <input type="password" class="input-box" placeholder="Your Password" id="pwd">
+                <input type="number" class="input-box" placeholder="mobile no" id="mob">
+                <p><span><input type="checkbox"></span>I agree to the Services</p>
+                <button>Signup</button>
+                <hr>
+                <p class="or">OR</p>
+                <!-- <button type="button" class="Signup-btn">Login with Twitter</button> -->
+                <p>Do you have an account? <a href="#">Sign in</a></p>
+            </form>
+            <script src="/js/lib.js"></script>
+        </div>
+        </body>
+        </html>
