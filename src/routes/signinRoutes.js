@@ -1,26 +1,24 @@
 const express = require('express');
 const signinRouter = express.Router();
 
-var sighin = [signinRouter]
-
-
-signinRouter.get('/',function(req,res){
-    res.render("signin",{
-        nav,
-        title:'Library',
-        signin
+function router(nav){
+    signinRouter.get('/',function(req,res){
+        res.render('signin',{
+            nav,
+            title: 'library'
+        })
+    })
+    
+    signinRouter.post('/add',function(req,res){
+        var item = {
+        email: req.body.email,
+        password: req.body.password
+    }
+    
+    var signin = signindata(item);
+    signin.save();  //saving to database
+    res.redirect('/signin'); 
     });
-});
-
-signinRouter.get('/:id',function(req,res){
-    const id = req.params.id
-    res.render('signin',{
-        nav,
-        title:'Library',
-        signin: signin[id]
-    });
-});
-
 return signinRouter;
 
 }
